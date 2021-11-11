@@ -7,7 +7,7 @@ let timeline = new TimelineMax();
 timeline
   .to(".rock1", 3, { y: -300 })
   .to(".girl1", 3, { y: -250 }, "-=3")
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 3 }, "-=3")
+  .fromTo(".bg1", { y: -50 }, { y: -10 }, "-=3")
   .to(".content", 3, { top: "0%" }, "-=3");
 
 let scene = new ScrollMagic.Scene({
