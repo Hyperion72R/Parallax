@@ -27,7 +27,7 @@ let scene = new ScrollMagic.Scene({
 
 timeline2
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 5 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 5 }, "-=4");
+  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 5 }, "-=5");
 
 let scene2 = new ScrollMagic.Scene({
   triggerElement: ".content-images",

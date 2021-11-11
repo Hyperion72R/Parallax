@@ -1,7 +1,5 @@
 let controller = new ScrollMagic.Controller();
 
-let controller2 = new ScrollMagic.Controller();
-
 let timeline = new TimelineMax();
 
 let timeline2 = new TimelineMax();
@@ -27,10 +25,11 @@ let scene = new ScrollMagic.Scene({
 
 timeline2
   .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 5 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 5 }, "-=4");
+  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 5 });
 
 let scene2 = new ScrollMagic.Scene({
   triggerElement: ".content-images",
 })
   .setTween(timeline2)
-  .addTo(controller2);
+
+  .addTo(controller);
